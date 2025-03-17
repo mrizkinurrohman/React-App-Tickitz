@@ -7,7 +7,7 @@ import Location from "../../assets/svg/entypo_location.svg";
 import Ebuid from "../../assets/svg/ebuid.svg";
 import Cinema from "../../assets/svg/cinema.svg";
 import Hiflix from "../../assets/svg/hiflix.svg";
-import Forward from "../../assets/svg/forwardup.svg";
+// import Forward from "../../assets/svg/Forwardup.svg";
 
 function Details() {
     return (
@@ -135,7 +135,7 @@ function Details() {
                 </form>
             </section>
             {/* modal detail movie verson mobile */}
-            <section className="md:hidden">
+            <section className="flex md:hidden">
                 <div className="flex flex-col px-[5%] relative -top-50">
                     <div className="flex flex-col gap-5 px-5 rounded-lg border-1 border-slate-200">
                         <div className="flex justify-between items-center border-b-1 border-slate-200 py-7 ">
@@ -146,9 +146,13 @@ function Details() {
                                 <h3 className="text-2xl">EBV.id</h3>
                                 <p>Whatever street No.12, South Purwokerto</p>
                             </div>
-                            <div>
+                            <label htmlFor=""></label>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                            {/* <div>
                                 <img src={Forward} alt="" />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="flex flex-col gap-5 py-7">
                             <div className="flex flex-col gap-5">
