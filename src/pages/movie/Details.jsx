@@ -7,7 +7,6 @@ import Location from "../../assets/svg/entypo_location.svg";
 import Ebuid from "../../assets/svg/ebuid.svg";
 import Cinema from "../../assets/svg/cinema.svg";
 import Hiflix from "../../assets/svg/hiflix.svg";
-// import Forward from "../../assets/svg/Forwardup.svg";
 
 function Details() {
     return (
@@ -150,9 +149,6 @@ function Details() {
                             <select name="" id="">
                                 <option value=""></option>
                             </select>
-                            {/* <div>
-                                <img src={Forward} alt="" />
-                            </div> */}
                         </div>
                         <div className="flex flex-col gap-5 py-7">
                             <div className="flex flex-col gap-5">
