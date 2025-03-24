@@ -7,6 +7,7 @@ import Location from "../../assets/svg/entypo_location.svg";
 import Ebuid from "../../assets/svg/ebuid.svg";
 import Cinema from "../../assets/svg/cinema.svg";
 import Hiflix from "../../assets/svg/hiflix.svg";
+import { Link } from "react-router";
 
 function Details() {
     return (
@@ -300,7 +301,7 @@ function Details() {
             </section>
             <section className="flex justify-center">
                 <button className="hidden md:flex md:gap-5 md:justify-center md:relative md:-top-30 md:bg-blue-700 md:text-white md:p-3 md:rounded-sm md:w-50">
-                    Book Now
+                    <Link to="/movie/orderseat">Book Now</Link>
                 </button>
             </section>
 
