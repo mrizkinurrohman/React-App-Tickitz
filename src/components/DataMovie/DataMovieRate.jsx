@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Left from "../../assets/svg/arrowwhiteleft.svg";
 import Right from "../../assets/svg/arrowwhiteright.svg";
+import { Link } from "react-router";
 
 // const apiKey = "f00aa3cf48820d5799ecb4f8bd369bd3";
 // const source = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
@@ -81,10 +82,12 @@ function DataMovieRate() {
                                 />
                                 <div className="group-hover:bg-black group-hover:opacity-70 inset-0 absolute z-8 flex flex-col justify-center items-center gap-2 rounded-lg p-4 hover:rounded-lg">
                                     <button className="p-1 md:p-3 hover:bg-blue-600  border-1 border-white">
-                                        Details
+                                        <Link to="/movie/detail">Details</Link>
                                     </button>
                                     <button className="p-1 md:p-3 hover:bg-blue-600 border-1 border-white">
-                                        Buy Ticket
+                                        <Link to="/movie/orderseat">
+                                            Buy Ticket
+                                        </Link>
                                     </button>
                                 </div>
                             </div>
