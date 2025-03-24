@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 
 // const apiKey = "f00aa3cf48820d5799ecb4f8bd369bd3";
 // const source = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
@@ -48,7 +49,7 @@ function GetDataMovie() {
     return (
         <>
             <section className="p-5 md:px-[10%]">
-                <div className="text-center mb-5">
+                <div className="text-center mb-5 text-2xl flex flex-col gap-1">
                     <p>MOVIES</p>
                     <p>Exciting Movies That Should Be Watched Today</p>
                 </div>
@@ -67,10 +68,12 @@ function GetDataMovie() {
                                 />
                                 <div className="group-hover:bg-black group-hover:opacity-80 inset-0 absolute z-8 flex flex-col justify-center items-center gap-2 rounded-lg p-4 hover:rounded-lg">
                                     <button className="p-1 md:p-3 hover:bg-blue-600 border-1 border-white z-40">
-                                        Details
+                                        <Link to="/movie/detail">Details</Link>
                                     </button>
                                     <button className="p-1 md:p-3 hover:bg-blue-600 border-1 border-white">
-                                        Buy Ticket
+                                        <Link to="/movie/orderseat">
+                                            Buy Ticket
+                                        </Link>
                                     </button>
                                 </div>
                             </div>
