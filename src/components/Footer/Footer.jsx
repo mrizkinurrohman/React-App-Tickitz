@@ -3,7 +3,7 @@ import LogoBlue from "../../assets/svg/logoblue.svg";
 function Footer() {
     return (
         <>
-            <section className="flex flex-col gap-6 p-5 md:flex-row md:px-[10%] md:justify-between">
+            <section className="flex flex-col gap-6 p-5 md:flex-row md:px-[10%] md:justify-between bg-white">
                 <div>
                     <img src={LogoBlue} alt="" width="183px" height="71.3px" />
                     <p>
