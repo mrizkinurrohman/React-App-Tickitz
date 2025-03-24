@@ -1,6 +1,7 @@
 import gambar from "../../assets/svg/logoblue.svg";
 import Hamburger from "../../assets/svg/Hamburger.svg";
 import { useState } from "react";
+import { Link } from "react-router";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,11 +34,9 @@ function Header() {
                             isOpen ? "flex" : "hidden"
                         } md:flex md:items-center md:gap-6 flex-col gap-3 md:flex-row text-center`}
                     >
-                        <a href="" className="hover:bg-amber-400 inline-block">
-                            Home
-                        </a>
-                        <a href="">Movie</a>
-                        <a href="">Buy Ticket</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/movie">Movie</Link>
+                        <Link to="/movie/orderseat">Buy Ticket</Link>
                     </div>
                     {/* nav button */}
                     <div
@@ -45,14 +44,14 @@ function Header() {
                             isOpen ? "flex" : "hidden"
                         } gap-2 md:flex md:items-center w-full md:gap-6 flex-col md:flex-row text-center md:w-auto`}
                     >
-                        <a href="">
-                            <button className="border-2 border-blue-500 p-2 text-blue-500">
+                        <Link to="/auth">
+                            <button className="border-2 border-blue-700 p-2 text-blue-500">
                                 Signin
                             </button>
-                        </a>
-                        <a href="">
-                            <button className="bg-blue-500 p-2">Signup</button>
-                        </a>
+                        </Link>
+                        <Link to="/auth/register">
+                            <button className="bg-blue-700 p-2">Signup</button>
+                        </Link>
                     </div>
                 </nav>
                 {/* <section className="flex flex-col">
